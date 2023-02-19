@@ -6,23 +6,28 @@ get a instanct up and running in the location of your choice.
 
 ## Steps
 
-1. Make sure you have flyctl installed and logged in on local,
-   https://fly.io/docs/hands-on/install-flyctl/.
-2. Download the linux node.js zip from the purchace page on Foundry, example: `FoundryVTT-10.291.zip`.
-3. Extract that zip to a folder called `foundryvtt` in the root of the project.
-4. Created the needed volume so all your game data survives server restarts.
+<ol>
+<li>Make sure you have flyctl installed and logged in on local, https://fly.io/docs/hands-on/install-flyctl/.</li>
+<li>Download the linux node.js zip from the purchace page on Foundry, example: `FoundryVTT-10.291.zip`.</li>
+<li>Extract that zip to a folder called `foundryvtt` in the root of the project.</li>
+<li>
+Created the needed volume so all your game data survives server restarts.
 ```shell
 $ fly volumes create foundry_vtt_data_v2 --region lhr --size 20
 ```
-5. Now you are ready to deploy!
+</li>
+<li>Now you are ready to deploy!
 ```shell
 $ flyctl launch
 ```
-6. Scale up the ram so the service runs smoothly.
+</li>
+<li>Scale up the ram so the service runs smoothly.
 ```shell
 $ flyctl scale memory 1024
 ```
-7. Check the fly.io dashboard for the public url and you are ready to use Foundry.
+</li>
+<li>Check the fly.io dashboard for the public url and you are ready to use Foundry.</li>
+</ol>
 
 ## Scaling down the service when not in use
 
