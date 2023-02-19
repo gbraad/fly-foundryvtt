@@ -11,7 +11,7 @@ get a instanct up and running in the location of your choice.
 <li>Download the linux node.js zip from the purchace page on Foundry, example: `FoundryVTT-10.291.zip`.</li>
 <li>Extract that zip to a folder called `foundryvtt` in the root of the project.</li>
 <li>
-Created the needed volume so all your game data survives server restarts.
+<p>Created the needed volume so all your game data survives server restarts.</p>
 <div class="highlight"><pre><span></span>$ fly volumes create foundry_vtt_data_v2 --region lhr --size 20</pre></div>
 </li>
 <li>Now you are ready to deploy!
