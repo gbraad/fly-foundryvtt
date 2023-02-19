@@ -18,6 +18,5 @@ COPY ./foundryvtt/ .
 
 EXPOSE 80:30000
 
-# Start running the server
-# node resources/app/main.js --dataPath=$HOME/foundrydata
+VOLUME ["/home/foundry/data"]
 CMD ["node", "/home/foundry/app/resources/app/main.js", "--headless", "--dataPath=/home/foundry/data" ]
