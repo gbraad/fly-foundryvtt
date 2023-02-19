@@ -10,9 +10,6 @@ USER foundry
 RUN mkdir -p /home/foundry/data
 RUN mkdir -p /home/foundry/app
 
-# WORKDIR /home/foundry/data
-# COPY --chown=$UID /foundrydata/ .
-
 WORKDIR /home/foundry/app
 COPY ./foundryvtt/ .
 
