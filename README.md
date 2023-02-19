@@ -8,6 +8,7 @@ get a instance up and running in the location of your choice.
 
 <ol>
 <li>Make sure you have flyctl installed and logged in on local, https://fly.io/docs/hands-on/install-flyctl/.</li>
+<li>Clone this repo.</li>
 <li>Download the linux node.js zip from the purchase page on Foundry, example: `FoundryVTT-10.291.zip`.</li>
 <li>Extract that zip to a folder called `foundryvtt` in the root of the project.</li>
 <li>
